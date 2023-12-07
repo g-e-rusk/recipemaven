@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Recipe Maven | Recipe Collection</title>
+    <meta name="author" content="Geri Rusk">
+    <meta name="description" content="Recipes curated from around the web and saved in one place for all home cooks, Moms and Dads, college students and all who love to eat food.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+
+</head>
+
+<body>
+<div id="gradientbar">
+    <header>             
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Recipe Maven logo">
+        </a>
+
+        <form class="search">
+            <div>
+                <input type="search" id="mySearch" name="q" placeholder="Search for recipes"/>
+                <button class="searchbutton">&#x1F50E;&#xFE0E;</button>
+            </div>
+        </form>
+    </header>
+</div>
+    <main>
+        <div class="carousel-container">
+            <div class="mySlides fade">
+                <img src="images/slideshow1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slideshow2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slideshow4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slideshow5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slideshow6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slideshow7.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <section class="recipes">
+            <ul class="recipe-list">
+                <li>
+                    <a href="recipes/index.html?category=breakfast">
+                    <img src="images/eggs.png" alt="Picture of eggs, toast and bacon for Breakfast food link">
+                    <h2 class="category">Breakfast</h2>
+                </a>
+                </li>
+                <li>
+                    <a href="recipes/index.html?category=lunch">
+                    <img src="images/sandwich.png" alt="Picture of sandwich for Lunch food link">
+                    <h2 class="category">Lunch</h2>
+                </a>
+                </li>
+                <li>
+                    <a href="recipes/index.html?category=dinner">
+                    <img src="images/pasta.png" alt="Picture of pasta for Dinner food link">
+                    <h2 class="category">Dinner</h2>
+                </a>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <p>&copy;Geri Rusk for Recipe Maven</p>
+            <p>WDD 330 Final Project</p>
+            <a href="/recipemaven/attributions/index.html">Attribution Page</a>
+            <div id="edamam-badge" data-color="transparent"></div>
+        </div>
+    </footer>
+    
+
+
+    
+</body>
+</html>

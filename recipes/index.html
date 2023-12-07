@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List | Recipe Maven | Recipe Collection</title>
+    <meta name="author" content="Geri Rusk">
+    <meta name="description" content="Specific lists of recipes filtered by meal type">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="../js/recipe-list.js" type="module"></script>
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+
+</head>
+
+<body>
+<div id="gradientbar">
+    <header>             
+        <a id="logo_link" href="/recipemaven/index.html">
+            <img class="logo" src="/recipemaven/images/logo.png" alt="Recipe Maven logo">
+        </a>
+
+        <form class="search">
+            <div>
+                <input type="search" id="mySearch" name="q" placeholder="Search for recipes"/>
+                <button class="searchbutton">&#x1F50E;&#xFE0E;</button>
+            </div>
+        </form>
+        <div id="edamam-badge" data-color="transparent"></div>
+    </header>
+</div>
+    <main>
+        <div class="recipe-category-results"></div>
+        <div class="recipe-search-results"></div>
+    
+        <template id="recipe-card-template">  
+            <ul class="recipe-list">
+            <li class="myrecipecard">
+                <img class="recipeimg" src="" alt="">
+                <h3 class="recipetitle"></h3>
+                <h4 class="recipesource"></h4>
+            </li>
+        </ul>
+        </template>
+        
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <p>&copy;Geri Rusk for Recipe Maven</p>
+            <p>WDD 330 Final Project</p>
+            <a href="/recipemaven/attributions/index.html">Attribution Page</a>
+        </div>
+    </footer>
+    
+
+
+    
+</body>
+</html>
