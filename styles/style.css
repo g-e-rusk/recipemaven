@@ -26,13 +26,6 @@ a:active {
     display: flex;
 }
 
-.recipebox {
-    filter: invert(0.35);
-    padding: 10px 30px;     
-    float: right;
-    width: 7%;
-}
-
 .logo {
     width: 50%;
     display: block;
@@ -137,24 +130,25 @@ a:active {
     grid-row: 1/3;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #2D3142;
-    margin-top: calc(25% - 20px);
+    margin-top: calc(15% - 30px);
 }
 
 .recipetitle {
     font-family: "Yeseva One", Times, serif;
     color: #2D3142;
-    font-size: 1.25rem;
+    font-size: 1.55rem;
     text-align: center;
-    padding: 10px;
     grid-column: 2/3;
+    margin-top: calc(15% - 30px);
 }
 
 .recipesource {
     font-family: "Josefin Sans", Arial, sans-serif;
     color: #2D3142;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     text-align: center;
     grid-column: 2/3;
+    margin-top: calc(-15% - 10px);
 }
 
 .recipe-category-results {
@@ -215,9 +209,6 @@ a:active {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-    .recipebox {
-        width: 20%;
-    }
 
     .logo {
         width: 90%;
@@ -232,128 +223,47 @@ a:active {
     }
         
     .carousel-container {
-        padding-top: 250px;    
+        padding-top: 210px;    
       }
 
     .recipes img {
         max-width: 40%;
     }
 
-    h2 {
-        padding-bottom: 20px;
-    }
-
-    .recipecard {
-        max-width: 92%;
-        margin-left: calc(5%); 
-        margin-top: calc(40% - 40px);
-        
-    }
-    
-    .recipe-card {
-        margin-top: calc(20% - 20px);
-        margin-left: calc(20% - 15px);
-    }
-    
-    .recipe-card-title {
-        font-size: 2.25rem;
-        margin-top: calc(17% - 5px);
-        margin-right: calc(15% - 10px);
-    }
-    
-    .recipe-box-save {
-        max-width: 50%;
-        margin-left: calc(20% - 10px);
-    }
-    
-    .recipe-box-remove {
-        max-width: 50%;
-        margin-top: calc(80% - 10px);
-        margin-left: calc(20% - 10px);
-    }
-    
-    .ingredients {
-        font-size: 1.5rem;
-        margin-left: calc(20% - 20px);
-        margin-top: calc(-20%);
-    }
-    
-    .ingredientlist {
-        font-size: 1.25rem;
-        margin-top: calc(5% - 50px);
-        margin-left: calc(7% - 20px);
-    }
-    
-    h5 {
-        font-size: 1.35rem;
-    }
-    
-    .directions {
-        font-size: 1.5rem;
-        margin-left: calc(15% - 20px);
-    }
-    
-    .direction {
-        margin-top: calc(10% - 5px);
-        font-size: 1.75rem;
-        margin-left: calc(10% - 17px);
-    }
-    
-    .recipebox-results {
-        font-size: 1.5rem;
-        margin-left: calc(11% - 20px);
-        margin-top: calc(35% - 10px);
-        margin-bottom: calc(-10% - 50px);
+    .category {
+        margin-bottom: calc(20% - 10px);
     }
 
     .recipe-category-results {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 20px;
-        margin-top: calc(10% - 20px);
+        margin-top: calc(5% - 20px);
         
-    }
-    
-    .savedrecipes {
-        max-width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: calc(20% - 50px);
-        margin-bottom: calc(5% - 20px);
-    }
-    
-    .savedrecipecard, .myrecipecard {
-        margin: 20px 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .recipeimg {
-        width: 100%;
-    }
-
-    .recipetitle, .recipecategory {
-        font-size: 1.15rem;;
-    }
-    
-    .rating-box  {
-        grid-column: 1/3;
-    }
-    
-    .ratingsheader {
-        padding: 10px;
-    }
-    
-    .stars {
-        margin-left: 13px;
     }
 
     .recipe-search-results {
         max-width: 75%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* margin-top: calc(20% - 30px);
-        margin-bottom: calc(5% - 20px); */
-        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+               
+    }
+    
+    .myrecipecard {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .recipetitle {
+        font-size: 1.25rem;
+        margin-top: calc(10% - 10px);
+        grid-row: 1/2;
+    }
+
+    .recipesource {
+        font-size: 1.05rem;
+        margin-top: calc(22% - 10px);
+        grid-row: 1/2;
     }
 
     .attributions {
@@ -381,24 +291,20 @@ a:active {
 }
 
 @media screen and (max-width: 480px) {
-    .recipebox {
-        width: 30%;
-    }
-
     .logo {
         width: 90%;
-        margin-left: calc(20% - 60px);
+        margin-left: calc(25% - 60px);
     }
 
     #mySearch {
         display: inline;
         width: 50%;
-        padding: 7px 10px;
+        padding: 10px 10px;
         margin-left: calc(42% - 60px);
     }
         
     .carousel-container {
-        padding-top: 160px;    
+        padding-top: 75px;    
       }
 
       .recipe-list {
@@ -406,142 +312,52 @@ a:active {
     }
 
     .recipes img {
-        max-width: 30%;
+        max-width: 50%;
     }
 
-    h2 {
-        padding-bottom: 10px;
-    }
-
-    .recipecard {
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-left: calc(5%); 
-        margin-top: calc(40% - 40px);
+    .recipe-category-results {
+        font-size: 1.25rem;
+        padding: 20px;
+        margin-top: calc(5% - 20px);
         
     }
-    
-    .recipe-card {
-        width: 100%;
-        margin-top: calc(30% - 20px);
-        margin-left: calc(20% - 15px);
-    }
-    
-    .recipe-card-title {
-        font-size: 1.25rem;
-        margin-top: calc(17% - 5px);
-        margin-right: calc(15% - 10px);
-    }
-    
-    .recipe-box-save {
-        max-width: 80%;
-        max-height: 40px;
-        font-size: .85rem;
-        margin-top: calc(70% - 10px);
-    }
-    
-    .recipe-box-remove {
-        max-width: 80%;
-        max-height: 40px;
-        font-size: .85rem;
-        padding: 5px;
-        margin-top: calc(110% - 10px);
-    }
-    
-    .ingredients {
-        font-size: 1.15rem;
-        margin-left: calc(20% - 20px);
-        margin-top: calc(-0%);
-    }
-    
-    .ingredientlist {
-        font-size: .9rem;
-        margin-top: calc(27% - 50px);
-        margin-left: calc(7% - 20px);
-    }
-    
-    h5 {
-        font-size: 1rem;
-    }
-    
-    .directions {
-        font-size: 1.15rem;
-        margin-left: calc(7% - 20px);
-    }
-    
-    .direction {
-        margin-top: calc(20% - 5px);
-        font-size: 1.2rem;
-        margin-left: calc(10% - 17px);
-    }
 
-    .recipebox-results {
-        font-size: 1.5rem;
-        margin-left: calc(25% - 20px);
-        margin-top: calc(25% - 20px);
-    }
-
-    .savedrecipes {
-        max-width: 80%;
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: calc(30% - 30px);
-        margin-bottom: calc(5% - 20px);
+    .recipe-search-results {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+               
     }
     
-    .savedrecipecard {
-        margin: 5px 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .myrecipecard {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
     }
 
     .recipeimg {
         width: 100%;
+        margin: 0;
+        padding: 0;
+
     }
 
+    
     .recipetitle {
         font-size: 1rem;
+        margin: 0;
+        padding: 0;
     }
 
-    .recipecategory {
-        font-size: 1rem;
+    .recipesource {
+        font-size: .85rem;
+        margin: 0;
+        padding: 0;
     }
     
-    .rating-box  {
-        grid-column: 1/3;
-    }
-    
-    .ratingsheader {
-        padding: 10px;
-    }
-    
-    .stars {
-        margin-left: 13px;
-    }
-
-    .recipe-category-results {
-        font-size: 1.15rem;
-        padding: 20px;
-        margin-left: calc(11% - 20px);
-        margin-top: calc(35% - 20px);
-        margin-bottom: calc(-10% - 50px);
-    }
-
-    .myrecipecard {
-        margin: 20px 10px;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .recipe-search-results {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: calc(25% - 30px);
-        margin-bottom: calc(5% - 20px);
-        
-    }
-
     .attributions {
         max-width: 90%;  
         margin-top: calc(15% - 10px); 

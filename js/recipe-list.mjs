@@ -11,7 +11,8 @@ export default async function recipeList(selector, category) {
         const breakfast = await getRecipesByMealType("Breakfast");
         const lunch = await getRecipesByMealType("Lunch");
         const dinner = await getRecipesByMealType("Dinner");
+        const dessert = await getRecipesByMealType("Dessert");
 
-        recipes = breakfast.concat(lunch, dinner);
+        recipes = breakfast.concat(lunch, dinner, dessert);
     }
 }

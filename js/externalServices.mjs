@@ -2,7 +2,7 @@ const baseUrl = "https://api.edamam.com/api/recipes/v2?type=public&app_id=310af9
 
 
 export async function getRecipesByMealType(mealType) {
-    const response = await fetch(baseUrl + `&mealType=${mealType}`);
+    const response = await fetch(baseUrl + `&q=${mealType}`);
     const data = await response.json();
     console.log(data);
 
@@ -20,10 +20,14 @@ export async function getRecipesByMealType(mealType) {
         const card = `
             <li class="myrecipecard">
                 <a href="${hit.recipe.url}">
-                <img class="recipeimg" src="${hit.recipe.images.SMALL.url}" alt="${hit.recipe.label}">
+                <picture>
+                <source media="(max-width: 480px)" srcset="${hit.recipe.images.THUMBNAIL.url}" />
+                <img class="recipeimg" src="${hit.recipe.images.SMALL.url}" alt="${hit.recipe.label}" />
+                </picture>
+                </a>
                 <h3 class="recipetitle">${hit.recipe.label}</h3>
                 <h4 class="recipesource">Source: ${hit.recipe.source}</h4>
-                </a>
+                
                 </li>
                 `;
 
