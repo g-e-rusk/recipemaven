@@ -1,3 +1,5 @@
+import searchModule from "./search.mjs";
+
 let slideIndex = 0;
 showSlides();
 
@@ -12,4 +14,8 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2500); 
 }
+
+const searchInput = document.getElementById("#mySearch");
+
+searchInput.addEventListener('keyup', searchModule.displayResults);
 

@@ -23,12 +23,12 @@
             <img class="logo" src="../images/logo.png" alt="Recipe Maven logo">
         </a>
 
-        <form class="search">
-            <div>
-                <input type="search" id="mySearch" name="q" placeholder="Search for recipes"/>
-                <button class="searchbutton">&#x1F50E;&#xFE0E;</button>
-            </div>
-        </form>
+        <div id="search-container">
+            <input type="text" id="mySearch" name="q" placeholder="Search for recipes"/>
+            <button class="searchbutton">&#x1F50E;&#xFE0E;</button>
+            <ul id="results-container"></ul>
+        </div>
+        
         <div id="edamam-badge" data-color="transparent"></div>
     </header>
 </div>

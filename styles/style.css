@@ -41,6 +41,17 @@ a:active {
     border-color: #4F5D75;
 }
 
+#results-container {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background:#FFFFFF;
+    border: 1px solid #4F5D75;
+    padding: 10px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    display: none;
+}
+
 #edamam-badge {
     text-align: center;
 }

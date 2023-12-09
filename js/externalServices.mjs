@@ -27,7 +27,7 @@ export async function getRecipesByMealType(mealType) {
                 </a>
                 <h3 class="recipetitle">${hit.recipe.label}</h3>
                 <h4 class="recipesource">Source: ${hit.recipe.source}</h4>
-                
+               
                 </li>
                 `;
 
