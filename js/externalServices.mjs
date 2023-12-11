@@ -23,11 +23,10 @@ export async function getRecipesByMealType(mealType) {
                 <picture>
                 <source media="(max-width: 480px)" srcset="${hit.recipe.images.THUMBNAIL.url}" />
                 <img class="recipeimg" src="${hit.recipe.images.SMALL.url}" alt="${hit.recipe.label}" />
-                </picture>
-                </a>
+                </picture></a>
                 <h3 class="recipetitle">${hit.recipe.label}</h3>
                 <h4 class="recipesource">Source: ${hit.recipe.source}</h4>
-               
+                
                 </li>
                 `;
 

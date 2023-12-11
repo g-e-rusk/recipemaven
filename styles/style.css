@@ -32,26 +32,6 @@ a:active {
     margin-left: calc(30% - 60px);
 }
 
-#mySearch {
-    display: inline;
-    width: 25%;
-    padding: 7px 10px;
-    margin-left: calc(42% - 60px);
-    font-family: "Josefin Sans", Arial, sans-serif;
-    border-color: #4F5D75;
-}
-
-#results-container {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    background:#FFFFFF;
-    border: 1px solid #4F5D75;
-    padding: 10px;
-    font-family: "Josefin Sans", Arial, sans-serif;
-    display: none;
-}
-
 #edamam-badge {
     text-align: center;
 }
@@ -62,7 +42,7 @@ a:active {
     height: 20%;
     position: relative;
     margin: auto;
-    padding-top: 250px;   
+    padding-top: 175px;   
     padding-bottom: 50px; 
   }
   
@@ -86,6 +66,9 @@ a:active {
     to {opacity: 1}
   }
 
+.recipes {
+    padding-bottom: 20px;
+}
 
 .recipe-list {
     list-style: none;
@@ -132,7 +115,6 @@ a:active {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    cursor: pointer;
 }
 
 .recipeimg {
@@ -142,6 +124,7 @@ a:active {
     border-radius: 10px;
     box-shadow: 2px 2px 2px #2D3142;
     margin-top: calc(15% - 30px);
+    cursor: pointer;
 }
 
 .recipetitle {
